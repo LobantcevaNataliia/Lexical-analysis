@@ -1,0 +1,37 @@
+const 
+     m=2;
+     n=3;
+type   
+    TArr=array [1..m,1..n] of  integer;
+    TVarr=array [1..m] of integer;
+var
+    A:TArr;
+    V:TVarr;
+    i,j,b,count:integer;
+    
+begin
+
+    writeln('Enter massive');
+    for i:=1 to m do
+     for j:=1 to n do
+    begin
+         write('A[',i,',',j,']= ');
+         readln(A[i,j]);
+    end;
+    
+    for i:=1 to m do
+    begin
+    count:=0;
+    for j:=1 to n do 
+     begin 
+         if A[i,j]<0 then
+          inc(count);
+          V[i]:=count 
+      end;
+     end;
+     
+    
+     for i:=1 to m do  
+     writeln('Vector[',i,']=',V[i]);
+     
+end.    
