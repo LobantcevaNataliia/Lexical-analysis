@@ -20,6 +20,11 @@ namespace AnAlgLab1
         private void OpenFile_Click(object sender, EventArgs e)
         {
             string str;
+            prog.Clear();
+            richTextBoxProgram.Clear();
+            richTextBoxLex.Clear();
+            richTextBoxErr.Clear();
+
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 StreamReader sr = new StreamReader(openFileDialog1.FileName);

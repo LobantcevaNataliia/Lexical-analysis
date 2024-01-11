@@ -19,7 +19,8 @@ namespace AnAlgLab1
         public LexAnalyzer(char[] program)
         {
             this.program = program;
-            using (StreamReader sr = new StreamReader(currDir + @"\t.txt"))
+            //lexClass = new Dictionary<string, string>();
+            using (StreamReader sr = new StreamReader(currDir + @"\Lexrules.txt"))
             {
                 while (!sr.EndOfStream)
                 {
